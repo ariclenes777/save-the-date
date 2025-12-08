@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Save the Date - Fevereiro 14 de 2026" />
+    <meta
+      name="keywords"
+      content="Alambamento, save the date, Nelma, Ariclenes, Pedido de Noivado"
+    />
+    <meta name="author" content="Ginelma & Ariclenes" />
+    <title>Save the Date - Ginelma & Ariclenes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- FONTES ATUALIZADAS COM PARISIENNE -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Great+Vibes&family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Metadados adicionais para melhor responsividade mobile -->
+    <meta name="theme-color" content="#b8860b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <style>
+      /* Reset e configurações base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+        min-height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Divider com coração animado */
+      .heart-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 30px 0;
+      }
+
+      .heart-divider-line {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.5);
+        flex: 1;
+        max-width: 100px;
+      }
+
+      .animated-heart {
+        font-size: 1.8rem;
+        color: #ff4d6d;
+        margin: 0 15px;
+        animation: heartbeat 1.5s ease-in-out infinite;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        5% {
+          transform: scale(1.1);
+        }
+        10% {
+          transform: scale(1);
+        }
+        15% {
+          transform: scale(1.2);
+        }
+        20% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* Responsividade para o coração animado */
+      @media (max-width: 768px) {
+        .animated-heart {
+          font-size: 1.5rem;
+          margin: 0 10px;
+        }
+
+        .heart-divider-line {
+          max-width: 80px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .animated-heart {
+          font-size: 1.3rem;
+          margin: 0 8px;
+        }
+
+        .heart-divider-line {
+          max-width: 60px;
+        }
+      }
+
+      /* Seção Hero com Slideshow */
+      .hero-section {
+        width: 100%;
+        height: 100vh;
+        min-height: 700px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slideshow-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .slide.active {
+        opacity: 1;
+      }
+
+      /* Overlay escuro para melhor legibilidade do texto */
+      .slide-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55);
+        z-index: 2;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /*textos da seção Banner "Junte-se a ..." */
+      .hero-title {
+        font-family: "Dancing Script", cursive;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /*textos da seção Banner "Ginel & Aric" */
+      .hero-subtitle {
+        font-family: "Great Vibes", cursive;
+        font-size: 5rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(174, 142, 0, 1);
+      }
+
+      .hero-date {
+        font-family: "Playfair Display", serif;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #b8860b;
+        margin-top: 20px;
+        padding: 15px 30px;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Seção de Detalhes do Evento */
+      .event-details-section {
+        width: 100%;
+        padding: 80px 20px;
+        background: #ffffff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title {
+        font-family: "Parisienne", cursive;
+        font-size: 2.8rem;
+        color: #2c2c2c;
+        margin-bottom: 15px;
+        font-weight: 400;
+      }
+
+      .section-subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      .cards-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .event-card {
+        flex: 1;
+        min-width: 300px;
+        max-width: 450px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .event-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .card-header {
+        background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%);
+        padding: 25px;
+        text-align: center;
+        color: white;
+      }
+
+      .card-title {
+        font-family: "Parisienne", cursive;
+        font-size: 2rem;
+        margin-bottom: 5px;
+        font-weight: 400;
+      }
+
+      .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .card-content {
+        padding: 30px;
+        text-align: center;
+      }
+
+      .card-time {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: #b8860b;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      .card-description {
+        font-family: "Montserrat", sans-serif;
+        color: #666;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+
+      /* Seção de Confirmação */
+      .confirmation-section {
+        width: 100%;
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+        text-align: center;
+      }
+
+      .confirmation-title {
+        font-family: "Parisienne", cursive;
+        font-size: 2.5rem;
+        color: #2c2c2c;
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
+
+      .confirmation-subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        line-height: 1.6;
+      }
+
+      .whatsapp-button {
+        display: inline-block;
+        padding: 18px 50px;
+        background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+        letter-spacing: 1px;
+        margin: 10px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .whatsapp-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+        background: linear-gradient(135deg, #128c7e 0%, #25d366 100%);
+      }
+
+      .whatsapp-icon {
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+
+      /* Footer */
+      .footer {
+        width: 100%;
+        padding: 60px 20px;
+        background: #2c2c2c;
+        color: #f0f0f0;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .footer-names {
+        font-family: "Parisienne", cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #d4af37;
+        font-weight: 400;
+      }
+
+      .footer-date {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #b8860b;
+      }
+
+      .footer-message {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        color: #aaa;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+
+      .footer-divider {
+        width: 100px;
+        height: 1px;
+        background: #b8860b;
+        margin: 30px auto;
+      }
+
+      .footer-location {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        color: #aaa;
+        margin-bottom: 20px;
+      }
+
+      .footer-copyright {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.8rem;
+        color: #888;
+        margin-top: 30px;
+      }
+
+      /* Responsividade para as imagens do slideshow */
+      @media (max-width: 768px) {
+        .slide {
+          background-size: cover;
+          background-position: center center;
+        }
+
+        .hero-title {
+          font-size: 2.5rem;
+        }
+
+        .hero-subtitle {
+          font-size: 3.5rem;
+        }
+
+        .hero-date {
+          font-size: 1.7rem;
+          padding: 12px 25px;
+        }
+
+        .section-title {
+          font-size: 2.2rem;
+        }
+
+        .card-title {
+          font-size: 1.7rem;
+        }
+
+        .confirmation-title {
+          font-size: 2rem;
+        }
+
+        .footer-names {
+          font-size: 2rem;
+        }
+
+        .event-card {
+          min-width: 100%;
+        }
+
+        .card-time {
+          font-size: 1.5rem;
+        }
+
+        .whatsapp-button {
+          padding: 15px 35px;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .slide {
+          background-size: cover;
+          background-position: center center;
+        }
+
+        .hero-title {
+          font-size: 2rem;
+        }
+
+        .hero-subtitle {
+          font-size: 2.5rem;
+        }
+
+        .hero-date {
+          font-size: 1.4rem;
+          padding: 10px 20px;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .card-title {
+          font-size: 1.5rem;
+        }
+
+        .confirmation-title {
+          font-size: 1.8rem;
+        }
+
+        .footer-names {
+          font-size: 1.8rem;
+        }
+
+        .hero-section {
+          min-height: 600px;
+        }
+      }
+
+      @media (max-width: 320px) {
+        .hero-section {
+          min-height: 500px;
+        }
+
+        .hero-title {
+          font-size: 1.8rem;
+        }
+
+        .hero-subtitle {
+          font-size: 2rem;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .card-title {
+          font-size: 1.4rem;
+        }
+
+        .confirmation-title {
+          font-size: 1.6rem;
+        }
+      }
+
+      /* Estilos para impressão */
+      @media print {
+        body {
+          background: white;
+        }
+
+        .calendar-button {
+          display: none;
+        }
+      }
+
+      /* Estilos do relógio flutuante */
+      .floating-countdown {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%);
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(184, 134, 11, 0.4);
+        z-index: 1000;
+        animation: fadeInUp 0.8s ease;
+      }
+
+      .countdown-header {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      .countdown-timer {
+        display: flex;
+        gap: 15px;
+      }
+
+      .countdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 35px;
+      }
+
+      .countdown-number {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .countdown-label {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.65rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.85);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 5px;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsividade do relógio */
+      @media (max-width: 768px) {
+        .floating-countdown {
+          bottom: 20px;
+          right: 20px;
+          padding: 15px 20px;
+        }
+
+        .countdown-timer {
+          gap: 10px;
+        }
+
+        .countdown-item {
+          min-width: 40px;
+        }
+
+        .countdown-number {
+          font-size: 1.4rem;
+        }
+
+        .countdown-label {
+          font-size: 0.6rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .floating-countdown {
+          bottom: 15px;
+          right: 15px;
+          left: 15px;
+          padding: 12px 15px;
+        }
+
+        .countdown-timer {
+          gap: 8px;
+          justify-content: center;
+        }
+
+        .countdown-item {
+          min-width: 35px;
+        }
+
+        .countdown-number {
+          font-size: 1.2rem;
+        }
+
+        .countdown-header {
+          font-size: 0.7rem;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media print {
+        .floating-countdown {
+          display: none;
+        }
+      }
+
+      /* POPUP DE CONFIRMAÇÃO */
+      .confirmation-popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+      }
+
+      .confirmation-popup {
+        background: white;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 500px;
+        padding: 40px 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        position: relative;
+        animation: popupFadeIn 0.3s ease;
+      }
+
+      @keyframes popupFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .popup-title {
+        font-family: "Parisienne", cursive;
+        font-size: 2.2rem;
+        color: #b8860b;
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: 400;
+      }
+
+      .popup-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #666;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .popup-close:hover {
+        color: #b8860b;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-label {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #f9f9f9;
+      }
+
+      .form-input:focus {
+        outline: none;
+        border-color: #b8860b;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+      }
+
+      .form-select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        background: #f9f9f9;
+        cursor: pointer;
+      }
+
+      .form-select:focus {
+        outline: none;
+        border-color: #b8860b;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+      }
+
+      .popup-button {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      }
+
+      .popup-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        background: linear-gradient(135deg, #128c7e 0%, #25d366 100%);
+      }
+
+      .popup-button:disabled {
+        background: #cccccc;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+
+      .error-message {
+        color: #e74c3c;
+        font-size: 0.8rem;
+        margin-top: 5px;
+        display: none;
+      }
+
+      .success-message {
+        background: #d4edda;
+        color: #155724;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 20px;
+        display: none;
+      }
+
+      /* Responsividade do popup */
+      @media (max-width: 768px) {
+        .confirmation-popup {
+          padding: 30px 20px;
+          width: 95%;
+        }
+
+        .popup-title {
+          font-size: 1.8rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .confirmation-popup {
+          padding: 25px 15px;
+        }
+
+        .popup-title {
+          font-size: 1.6rem;
+        }
+
+        .form-input,
+        .form-select {
+          padding: 10px 12px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Relógio flutuante de contagem regressiva -->
+    <div id="floating-countdown" class="floating-countdown">
+      <div class="countdown-header">Faltam</div>
+      <div class="countdown-timer">
+        <div class="countdown-item">
+          <span class="countdown-number" id="days">0</span>
+          <span class="countdown-label">Dias</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="hours">0</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="minutes">0</span>
+          <span class="countdown-label">Min</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="seconds">0</span>
+          <span class="countdown-label">Seg</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP DE CONFIRMAÇÃO -->
+    <div id="confirmationPopup" class="confirmation-popup-overlay">
+      <div class="confirmation-popup">
+        <button class="popup-close" onclick="closePopup()">×</button>
+        <h2 class="popup-title">Confirmar Presença</h2>
+
+        <div id="successMessage" class="success-message">
+          Dados enviados com sucesso! Redirecionando para o WhatsApp...
+        </div>
+
+        <form id="confirmationForm">
+          <div class="form-group">
+            <label class="form-label" for="guestName">Seu Nome *</label>
+            <input
+              type="text"
+              id="guestName"
+              class="form-input"
+              placeholder="Digite seu nome completo"
+              required
+            />
+            <div id="nameError" class="error-message">
+              Por favor, insira seu nome.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="accompaniment"
+              >Acompanhante(s)</label
+            >
+            <input
+              type="text"
+              id="accompaniment"
+              class="form-input"
+              placeholder="Nome(s) do(s) acompanhante(s) - Opcional"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phoneNumber"
+              >Número de Telefone *</label
+            >
+            <input
+              type="tel"
+              id="phoneNumber"
+              class="form-input"
+              placeholder="Ex: +244 900 000 000"
+              required
+            />
+            <div id="phoneError" class="error-message">
+              Por favor, insira um número de telefone válido.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="guestType">Convidado por *</label>
+            <select id="guestType" class="form-select" required>
+              <option value="">Selecione uma opção</option>
+              <option value="noiva">Parte da Noiva (Ginelma)</option>
+              <option value="noivo">Parte do Noivo (Ariclenes)</option>
+            </select>
+            <div id="typeError" class="error-message">
+              Por favor, selecione por quem é convidado.
+            </div>
+          </div>
+
+          <button type="submit" class="popup-button" id="submitButton">
+            <span class="whatsapp-icon">💬</span> Enviar Confirmação
+          </button>
+
+          <p
+            style="
+              margin-top: 15px;
+              font-size: 0.8rem;
+              color: #666;
+              text-align: center;
+            "
+          >
+            * Campos obrigatórios
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Seção Hero com Slideshow -->
+    <section class="hero-section">
+      <div class="slideshow-container">
+        <!-- Slides com imagens dos noivos -->
+        <div class="slide active" id="slide1"></div>
+        <div class="slide" id="slide2"></div>
+        <div class="slide" id="slide3"></div>
+        <div class="slide-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Junte-se a nós para celebrar</h1>
+        <div class="heart-divider">
+          <div class="heart-divider-line"></div>
+          <div class="animated-heart">♥</div>
+          <div class="heart-divider-line"></div>
+        </div>
+        <p
+          style="
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            margin: 20px 0;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          "
+        >
+          O nosso noivado
+        </p>
+
+        <div class="heart-divider">
+          <div class="heart-divider-line"></div>
+          <div class="animated-heart">♥</div>
+          <div class="heart-divider-line"></div>
+        </div>
+        <h2 class="hero-subtitle">Ginelma & Ariclenes</h2>
+
+        <p class="hero-date">14 de Fevereiro de 2026</p>
+      </div>
+    </section>
+
+    <!-- Seção de Detalhes do Evento -->
+    <section class="event-details-section">
+      <div class="section-header">
+        <h2 class="section-title">Detalhes do Evento</h2>
+        <p class="section-subtitle">
+          Uma celebração de amor e união entre duas famílias. Participe deste
+          momento especial conosco.
+        </p>
+      </div>
+
+      <div class="cards-container">
+        <!-- Card 1: Encontro das Famílias -->
+        <div class="event-card">
+          <div class="card-header">
+            <div class="card-icon">👨‍👩‍👧‍👦</div>
+            <h3 class="card-title">Encontro das Famílias</h3>
+          </div>
+          <div class="card-content">
+            <div class="card-time">14:00h</div>
+            <p class="card-description">
+              É neste momento que DEUS vai unir Icolo e Bengo e Malanje e se
+              tornarão em um só povo. duas Tribos, duas famílias, um só desejo,
+              uma só união.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Celebração -->
+        <div class="event-card">
+          <div class="card-header">
+            <div class="card-icon">🎉</div>
+            <h3 class="card-title">Celebração</h3>
+          </div>
+          <div class="card-content">
+            <div class="card-time">15:30h</div>
+            <p class="card-description">
+              Recepção e festa para celebrar nosso noivado com todos os amigos e
+              familiares. Música, dança, comidas especiais e momentos
+              inesquecíveis. #NadadeEnergiasNegativas!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Confirmação -->
+    <section class="confirmation-section">
+      <h2 class="confirmation-title">Confirme Sua Presença</h2>
+      <p class="confirmation-subtitle">
+        Para nos ajudar nos preparativos, pedimos que confirme sua presença até
+        15 de Janeiro de 2026.
+      </p>
+
+      <button class="whatsapp-button" onclick="openConfirmationPopup()">
+        <span class="whatsapp-icon">💬</span> Confirmar Presença
+      </button>
+
+      <p
+        style="
+          margin-top: 20px;
+          font-family: 'Montserrat', sans-serif;
+          color: #666;
+          font-size: 0.9rem;
+        "
+      >
+        Para família da noiva, confirmar com Ginelma. Para demais convidados,
+        confirmar com Ariclenes.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3 class="footer-names">Ginelma & Ariclenes</h3>
+        <div class="footer-date">14 de Fevereiro de 2026</div>
+
+        <div class="footer-divider"></div>
+
+        <p class="footer-location">
+          <strong>Local:</strong> Quinta Kabezo, Kilamba, Luanda
+        </p>
+
+        <p class="footer-message">
+          Com muita alegria no coração, convidamos você para fazer parte deste
+          momento tão especial em nossas vidas. Sua presença será o nosso maior
+          presente!
+        </p>
+
+        <div class="footer-divider"></div>
+
+        <p class="footer-copyright">Com amor, Ginelma & Ariclenes © 2025</p>
+      </div>
+    </footer>
+
+    <script>
+      // Função de contagem regressiva
+      function updateCountdown() {
+        const eventDate = new Date("2026-02-14T00:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        if (distance < 0) {
+          document.getElementById("days").textContent = "0";
+          document.getElementById("hours").textContent = "0";
+          document.getElementById("minutes").textContent = "0";
+          document.getElementById("seconds").textContent = "0";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").textContent = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").textContent = seconds
+          .toString()
+          .padStart(2, "0");
+      }
+
+      // Atualizar a cada segundo
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // Slideshow automático
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      // Adicionar imagens - elas agora se adaptarão automaticamente ao tamanho da tela
+      document.getElementById("slide1").style.backgroundImage =
+        "url('fotos/6.jpg')";
+      document.getElementById("slide2").style.backgroundImage =
+        "url('fotos/7.jpg')";
+      document.getElementById("slide3").style.backgroundImage =
+        "url('fotos/3.jpg')";
+
+      function nextSlide() {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+      }
+
+      // Mudar slide a cada 5 segundos
+      setInterval(nextSlide, 5000);
+
+      // Função para adicionar ao calendário
+      function addToCalendar() {
+        const eventDate = "20260214";
+        const eventTitle = "Ginelma & Ariclenes";
+        const eventLocation = "Quinta Kabezo, Kilamba, Luanda";
+        const eventDetails = "Noivado de Ginelma & Ariclenes";
+
+        const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+          eventTitle
+        )}&dates=${eventDate}/${eventDate}&details=${encodeURIComponent(
+          eventDetails
+        )}&location=${encodeURIComponent(eventLocation)}`;
+
+        window.open(googleCalendarUrl, "_blank");
+      }
+
+      // FUNÇÕES DO POPUP DE CONFIRMAÇÃO
+      function openConfirmationPopup() {
+        document.getElementById("confirmationPopup").style.display = "flex";
+        document.body.style.overflow = "hidden"; // Previne scroll da página
+      }
+
+      function closePopup() {
+        document.getElementById("confirmationPopup").style.display = "none";
+        document.body.style.overflow = "auto"; // Restaura scroll da página
+        resetForm();
+      }
+
+      function resetForm() {
+        document.getElementById("confirmationForm").reset();
+        hideAllErrors();
+        document.getElementById("successMessage").style.display = "none";
+        document.getElementById("submitButton").disabled = false;
+        document.getElementById("submitButton").innerHTML =
+          '<span class="whatsapp-icon">💬</span> Enviar Confirmação';
+      }
+
+      function hideAllErrors() {
+        document.getElementById("nameError").style.display = "none";
+        document.getElementById("phoneError").style.display = "none";
+        document.getElementById("typeError").style.display = "none";
+      }
+
+      function validatePhoneNumber(phone) {
+        // Remove todos os caracteres não numéricos
+        const cleaned = phone.replace(/\D/g, "");
+        // Verifica se tem entre 9 e 15 dígitos (considerando código do país)
+        return cleaned.length >= 9 && cleaned.length <= 15;
+      }
+
+      // Fechar popup ao clicar fora
+      document
+        .getElementById("confirmationPopup")
+        .addEventListener("click", function (e) {
+          if (e.target === this) {
+            closePopup();
+          }
+        });
+
+      // Submissão do formulário
+      document
+        .getElementById("confirmationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Reset erros
+          hideAllErrors();
+
+          // Validação
+          const name = document.getElementById("guestName").value.trim();
+          const phone = document.getElementById("phoneNumber").value.trim();
+          const guestType = document.getElementById("guestType").value;
+          const accompaniment = document
+            .getElementById("accompaniment")
+            .value.trim();
+
+          let isValid = true;
+
+          if (!name) {
+            document.getElementById("nameError").style.display = "block";
+            isValid = false;
+          }
+
+          if (!phone || !validatePhoneNumber(phone)) {
+            document.getElementById("phoneError").style.display = "block";
+            isValid = false;
+          }
+
+          if (!guestType) {
+            document.getElementById("typeError").style.display = "block";
+            isValid = false;
+          }
+
+          if (!isValid) return;
+
+          // Desabilita o botão de enviar
+          const submitButton = document.getElementById("submitButton");
+          submitButton.disabled = true;
+          submitButton.innerHTML =
+            '<span class="whatsapp-icon">⏳</span> Enviando...';
+
+          // Monta a mensagem para o WhatsApp
+          let message = `Olá! Gostaria de confirmar minha presença no noivado de Ginelma & Ariclenes no dia 14 de fevereiro de 2026.\n\n`;
+          message += `*Nome:* ${name}\n`;
+
+          if (accompaniment) {
+            message += `*Acompanhante(s):* ${accompaniment}\n`;
+          }
+
+          message += `*Telefone:* ${phone}\n`;
+          message += `*Convidado por:* ${
+            guestType === "noiva"
+              ? "Parte da Noiva (Ginelma)"
+              : "Parte do Noivo (Ariclenes)"
+          }\n\n`;
+          message += `Aguardamos ansiosos pela sua presença! ❤️`;
+
+          // Mostra mensagem de sucesso
+          document.getElementById("successMessage").style.display = "block";
+
+          // Determina o número do WhatsApp baseado na escolha
+          let whatsappNumber;
+          if (guestType === "noiva") {
+            whatsappNumber = "244949804704"; // Noiva
+          } else {
+            whatsappNumber = "244932722512"; // Noivo
+          }
+
+          // Aguarda 2 segundos antes de redirecionar
+          setTimeout(() => {
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            window.open(whatsappUrl, "_blank");
+            closePopup();
+          }, 2000);
+        });
+
+      // Fechar com ESC
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closePopup();
+        }
+      });
+    </script>
+  </body>
+</html>
